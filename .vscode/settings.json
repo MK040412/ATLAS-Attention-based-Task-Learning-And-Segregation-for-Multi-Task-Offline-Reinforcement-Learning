@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./lifelong_rl_project/lifelong_rl"
+    ]
+}
