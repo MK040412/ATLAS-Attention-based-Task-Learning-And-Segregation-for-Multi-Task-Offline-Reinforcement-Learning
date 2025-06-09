@@ -1,0 +1,76 @@
+# 훈련된 지시사항 테스트
+- name: "trained_basic_push"
+  instruction: "Push the blue cube to the goal position"
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [3.0, 0.0, 0.1]
+
+- name: "trained_far_push"
+  instruction: "Move the cube to the distant target"
+  env_cfg:
+    cube_position: [1.5, 0.0, 0.1]
+    goal_position: [4.0, 0.0, 0.1]
+
+- name: "trained_left_push"
+  instruction: "Push the cube to the left side"
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [2.0, 2.0, 0.1]
+
+- name: "trained_diagonal"
+  instruction: "Move the cube diagonally to the corner"
+  env_cfg:
+    cube_position: [1.0, 0.0, 0.1]
+    goal_position: [3.0, 3.0, 0.1]
+
+# OOD 테스트 (의역)
+- name: "ood_paraphrase_1"
+  instruction: "Move the object to the target location"
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [3.0, 0.0, 0.1]
+
+- name: "ood_paraphrase_2"
+  instruction: "Transport the box to the destination"
+  env_cfg:
+    cube_position: [1.5, 0.5, 0.1]
+    goal_position: [3.5, 1.5, 0.1]
+
+# OOD 테스트 (새로운 동사)
+- name: "ood_new_verb_1"
+  instruction: "Shove the cube forward"
+  env_cfg:
+    cube_position: [1.0, 0.0, 0.1]
+    goal_position: [4.0, 0.0, 0.1]
+
+- name: "ood_new_verb_2"
+  instruction: "Slide the box to the right"
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [2.0, 3.0, 0.1]
+
+# OOD 테스트 (복합 지시사항)
+- name: "ood_complex_1"
+  instruction: "Carefully push the cube to avoid obstacles"
+  env_cfg:
+    cube_position: [1.5, 0.0, 0.1]
+    goal_position: [3.0, 0.0, 0.1]
+
+- name: "ood_complex_2"
+  instruction: "Move the cube quickly to the goal"
+  env_cfg:
+    cube_position: [2.0, 1.0, 0.1]
+    goal_position: [2.0, -1.0, 0.1]
+
+# 극한 테스트
+- name: "extreme_distance"
+  instruction: "Push the cube very far"
+  env_cfg:
+    cube_position: [0.5, 0.0, 0.1]
+    goal_position: [5.0, 0.0, 0.1]
+
+- name: "extreme_angle"
+  instruction: "Move the cube at a sharp angle"
+  env_cfg:
+    cube_position: [1.0, 1.0, 0.1]
+    goal_position: [4.0, -2.0, 0.1] 

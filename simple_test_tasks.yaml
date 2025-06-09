@@ -1,0 +1,20 @@
+- name: "basic_push"
+  instruction: "Push the blue cube to the goal position"
+  episodes: 3
+  env_cfg:
+    cube_position: [1.5, 0.0, 0.1]
+    goal_position: [2.5, 0.0, 0.1]
+
+- name: "long_push"
+  instruction: "Move the cube far to the target location"
+  episodes: 3
+  env_cfg:
+    cube_position: [1.0, 0.0, 0.1]
+    goal_position: [3.0, 0.0, 0.1]
+
+- name: "side_push"
+  instruction: "Push the cube sideways to reach the goal"
+  episodes: 3
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [2.0, 1.5, 0.1]

@@ -1,0 +1,27 @@
+- name: "push_cube_basic"
+  instruction: "Push the blue cube to the goal position"
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [3.0, 0.0, 0.1]
+  episodes: 30
+
+- name: "push_cube_far"
+  instruction: "Move the cube to the distant target"
+  env_cfg:
+    cube_position: [1.5, 0.0, 0.1]
+    goal_position: [4.0, 0.0, 0.1]
+  episodes: 30
+
+- name: "push_cube_left"
+  instruction: "Push the cube to the left side"
+  env_cfg:
+    cube_position: [2.0, 0.0, 0.1]
+    goal_position: [2.0, 2.0, 0.1]
+  episodes: 30
+
+- name: "push_cube_diagonal"
+  instruction: "Move the cube diagonally to the corner"
+  env_cfg:
+    cube_position: [1.0, 0.0, 0.1]
+    goal_position: [3.0, 3.0, 0.1]
+  episodes: 30

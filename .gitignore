@@ -1,0 +1,15 @@
+# Model files
+*.pth
+*.pkl
+*.zip
+*.npz
+*.npy
+
+# Output directories
+outputs*/
+results/
+__pycache__/
+*.pyc
+
+# Git repositories
+.git/

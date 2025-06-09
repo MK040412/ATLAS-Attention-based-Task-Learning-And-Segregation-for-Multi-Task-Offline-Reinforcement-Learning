@@ -1,0 +1,33 @@
+# RTX 4060 최적화된 간단한 태스크들
+
+- name: "basic_push"
+  instruction: "Push the blue cube to the goal position"
+  episodes: 50
+  env_cfg:
+    cube_position: [1.5, 0.0, 0.1]
+    goal_position: [2.5, 0.0, 0.1]
+    friction: 0.8
+
+- name: "close_push"
+  instruction: "Move the cube closer to the target"
+  episodes: 30
+  env_cfg:
+    cube_position: [1.8, 0.0, 0.1]
+    goal_position: [2.2, 0.0, 0.1]
+    friction: 0.6
+
+- name: "side_push"
+  instruction: "Push the cube sideways to reach the goal"
+  episodes: 40
+  env_cfg:
+    cube_position: [2.0, -0.5, 0.1]
+    goal_position: [2.0, 0.5, 0.1]
+    friction: 0.7
+
+- name: "far_push"
+  instruction: "Push the cube to the distant goal"
+  episodes: 60
+  env_cfg:
+    cube_position: [1.0, 0.0, 0.1]
+    goal_position: [3.0, 0.0, 0.1]
+    friction: 0.9
