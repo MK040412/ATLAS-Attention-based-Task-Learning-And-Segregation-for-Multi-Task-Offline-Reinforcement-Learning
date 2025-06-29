@@ -1,4 +1,4 @@
-ㅊ # Ant MoE SAC Agent with DPMM Clustering
+# Ant MoE SAC Agent with DPMM Clustering
 
 This repository implements a Mixture-of-Experts (MoE) SAC agent with dynamic expert management
 using a Dirichlet Process Mixture Model (birth and merge), integrated with NVIDIA Isaac Lab's
